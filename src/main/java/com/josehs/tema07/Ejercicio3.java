@@ -23,7 +23,7 @@ public class Ejercicio3 {
         if (hayNumeros) {
             System.out.println("El número más alto es: " + nMAlto);
         } else {
-            System.out.println("No se hay ningún número.");
+            System.out.println("No hay ningún número.");
         }
     }
 
