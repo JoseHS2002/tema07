@@ -6,15 +6,25 @@ import java.util.InputMismatchException;
 public class Ejercicio4 {
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
+        System.out.println("1: Introducir 5 numeros\n2: Sobrepasar la capacidad del array\n3: Array nulo");
+        int opcion = scanner.nextInt();
 
-        int[] array1 = new int[5];
-        llenarArray(array1);
+        switch (opcion) {
+            case 1 ->{
+                int[] array1 = new int[5];
+                llenarArray(array1);
+            }
 
-        int[] array2 = new int[3];
-        llenarArray(array2);
+            case 2 ->{
+                int[] array2 = new int[3];
+                llenarArray(array2);
+            }
 
-        int[] array3 = null;
-        llenarArray(array3);
+            case 3 -> {
+                int[] array3 = null;
+                llenarArray(array3);
+            }
+        }
     }
 
     public static void llenarArray(int[] array) {
