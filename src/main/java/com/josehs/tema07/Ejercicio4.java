@@ -22,17 +22,16 @@ public class Ejercicio4 {
             return;
         }
 
-        Scanner scanner = new Scanner(System.in);
         int i = 0;
         while (i < array.length) {
             try {
                 System.out.print("Introduce un número entero: ");
                 array[i] = scanner.nextInt();
                 i++;
-            } catch (InputMismatchException e) {
+            } catch (InputMismatchException ime) {
                 System.out.println("Debes introducir un número entero.");
                 scanner.nextLine();
-            } catch (ArrayIndexOutOfBoundsException e) {
+            } catch (ArrayIndexOutOfBoundsException aioobe) {
                 System.out.println("Se ha sobrepasado la capacidad del array.");
                 break;
             }
@@ -40,7 +39,7 @@ public class Ejercicio4 {
 
         System.out.println("Contenido del array:");
         for (int num : array) {
-            System.out.print(num + " ");
+            System.out.print(num + "; ");
         }
         System.out.println();
     }
