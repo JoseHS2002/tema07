@@ -6,6 +6,7 @@ import java.util.InputMismatchException;
 public class Ejercicio4 {
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
+
         int[] array1 = new int[5];
         llenarArray(array1);
 
@@ -18,7 +19,7 @@ public class Ejercicio4 {
 
     public static void llenarArray(int[] array) {
         if (array == null) {
-            System.out.println("El array no está creado.");
+            System.out.println("El array no está creado o le falta espacio.");
             return;
         }
 
