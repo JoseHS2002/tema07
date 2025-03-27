@@ -29,12 +29,12 @@ public class Ejercicio4 {
 
     public static void llenarArray(int[] array) {
         if (array == null) {
-            System.out.println("El array no está creado o le falta espacio.");
+            System.out.println("El array no está creado.");
             return;
         }
 
         int i = 0;
-        while (i < array.length) {
+        while (i <= array.length) {
             try {
                 System.out.print("Introduce un número entero: ");
                 array[i] = scanner.nextInt();
